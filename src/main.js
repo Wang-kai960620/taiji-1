@@ -8,6 +8,8 @@ let string = `
    border: 1px solid red;
    width:200px;
    height:200px;
+   left:50%;
+   transform:translateX(-50%);
    border-radius:50% 50% 50% 50%;
    box-shadow: 0 0 3px rgba(0,0,0,1);
    border:none;
@@ -75,7 +77,7 @@ let step = () => {
     html.innerHTML = string2;
     style.innerHTML = string.substring(0, n);
     step();
-  }, 50);
+  }, 0);
   window.scrollTo(0, 999);
   html.scrollTo(0, 9999);
 };
